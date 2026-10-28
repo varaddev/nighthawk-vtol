@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NIGHTHAWK VTOL | Final Year Project</title>
+
+    <meta name="description"
+          content="NIGHTHAWK VTOL — A student-engineered Vertical Take-Off and Landing aircraft project.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Background decoration -->
+    <div class="background-grid"></div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="#home" class="brand">
+            <span class="brand-mark">N</span>
+            <span>NIGHTHAWK<span class="brand-light"> / VTOL</span></span>
+        </a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#components">Components</a>
+            <a href="#fabrication">Fabrication</a>
+            <a href="#team">Team</a>
+        </nav>
+
+        <a href="#team" class="nav-button">PROJECT 2026 ↗</a>
+    </header>
+
+
+    <!-- SECTION 01: HERO -->
+    <main>
+
+        <section class="hero section" id="home">
+
+            <div class="hero-top reveal">
+                <span class="eyebrow">
+                    <span class="status-dot"></span>
+                    ENGINEERING PROJECT / 2026
+                </span>
+
+                <span class="hero-index">01 — 04</span>
+            </div>
+
+            <div class="hero-content">
+
+                <div class="hero-heading reveal">
+                    <p class="small-label">BEYOND THE HORIZON</p>
+
+                    <h1>
+                        NIGHTHAWK
+                        <span>VTOL<span class="title-period">.</span></span>
+                    </h1>
+
+                    <p class="hero-description">
+                        One aircraft. Two flight modes.
+                        <br>
+                        Engineering the transition between vertical lift
+                        and forward flight.
+                    </p>
+
+                    <a href="#components" class="explore-button">
+                        EXPLORE THE PROJECT
+                        <span>↓</span>
+                    </a>
+                </div>
+
+                <div class="hero-aircraft">
+                    <div class="aircraft-orbit orbit-one"></div>
+                    <div class="aircraft-orbit orbit-two"></div>
+
+                    <span class="aircraft-tag tag-top">
+                        AIRFRAME / 001
+                    </span>
+
+                    <img
+                        src="assets/drone.jpeg"
+                        alt="NIGHTHAWK VTOL prototype aircraft"
+                        class="drone-image"
+                    >
+
+                    <span class="aircraft-tag tag-bottom">
+                        VERTICAL TAKE-OFF / FIXED-WING FLIGHT
+                    </span>
+                </div>
+
+            </div>
+
+            <div class="hero-footer">
+                <span>DESIGNED TO LIFT OFF</span>
+                <span>BUILT TO MOVE FORWARD</span>
+                <span class="scroll-indicator">
+                    SCROLL TO DISCOVER ↓
+                </span>
+            </div>
+
+        </section>
+
+
+        <!-- SECTION 02: PROJECT OVERVIEW -->
+        <section class="overview section" id="overview">
+
+            <div class="section-heading reveal">
+                <span class="eyebrow">01 / THE CONCEPT</span>
+
+                <h2>
+                    Two worlds.
+                    <span>One aircraft.</span>
+                </h2>
+
+                <p>
+                    NIGHTHAWK VTOL combines the vertical-lift capability
+                    of a multirotor with the forward-flight efficiency
+                    of a fixed-wing aircraft.
+                </p>
+            </div>
+
+            <div class="overview-grid">
+
+                <article class="overview-card reveal">
+                    <span class="card-number">01</span>
+
+                    <div class="overview-icon">↟</div>
+
+                    <h3>Vertical Lift</h3>
+
+                    <p>
+                        Multiple motor systems provide the vertical thrust
+                        required for take-off and landing.
+                    </p>
+
+                    <span class="card-tag">HOVER / LIFT</span>
+                </article>
+
+                <article class="overview-card reveal">
+                    <span class="card-number">02</span>
+
+                    <div class="overview-icon">↗</div>
+
+                    <h3>Forward Flight</h3>
+
+                    <p>
+                        The fixed-wing airframe is designed to generate
+                        aerodynamic lift during forward flight.
+                    </p>
+
+                    <span class="card-tag">CRUISE / GLIDE</span>
+                </article>
+
+                <article class="overview-card reveal">
+                    <span class="card-number">03</span>
+
+                    <div class="overview-icon">⌘</div>
+
+                    <h3>Integrated Control</h3>
+
+                    <p>
+                        Electronic control, radio inputs and servo
+                        mechanisms form the aircraft's control system.
+                    </p>
+
+                    <span class="card-tag">ELECTRONICS / CONTROL</span>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- SECTION 03: COMPONENTS -->
+        <section class="components section" id="components">
+
+            <div class="section-heading reveal">
+
+                <span class="eyebrow">02 / HARDWARE ARCHITECTURE</span>
+
+                <h2>
+                    Every component.
+                    <span>One system.</span>
+                </h2>
+
+                <p>
+                    A closer look at the electronics, propulsion,
+                    control and fabrication materials used in our prototype.
+                </p>
+
+            </div>
+
+            <div class="components-layout">
+
+                <!-- Component 1 -->
+                <article class="component-row reveal">
+
+                    <div class="component-number">01</div>
+
+                    <div class="component-image">
+                        <img
+                            src="assets/esp32.jpeg"
+                            alt="ESP32 development board"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="component-info">
+                        <span class="component-category">PROCESSING / CONTROL</span>
+
+                        <h3>ESP32-WROOM</h3>
+
+                        <p>
+                            The main microcontroller used to process
+                            control inputs, communicate with peripherals
+                            and execute the aircraft's control logic.
+                        </p>
+
+                        <div class="component-tags">
+                            <span>Microcontroller</span>
+                            <span>GPIO</span>
+                            <span>I²C</span>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <!-- Component 2 -->
+                <article class="component-row reverse reveal">
+
+                    <div class="component-number">02</div>
+
+                    <div class="component-image">
+                        <img
+                            src="assets/battery.jpeg"
+                            alt="14.8 volt 1500 mAh LiPo battery"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="component-info">
+                        <span class="component-category">POWER / ENERGY</span>
+
+                        <h3>LiPo Battery</h3>
+
+                        <p>
+                            The 14.8 V, 1500 mAh, 4S lithium-polymer
+                            battery supplies electrical energy to the
+                            aircraft's propulsion and power systems.
+                        </p>
+
+                        <div class="component-tags">
+                            <span>4S</span>
+                            <span>14.8 V nominal</span>
+                            <span>1500 mAh</span>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <!-- Component 3 -->
+                <article class="component-row reveal">
+
+                    <div class="component-number">03</div>
+
+                    <div class="component-image">
+                        <img
+                            src="assets/motor.jpeg"
+                            alt="Brushless electric motor"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="component-info">
+                        <span class="component-category">PROPULSION</span>
+
+                        <h3>Brushless Motors</h3>
+
+                        <p>
+                            Brushless motors convert electrical energy
+                            into rotational motion to produce thrust.
+                            Three motors form the prototype's
+                            propulsion arrangement.
+                        </p>
+
+                        <div class="component-tags">
+                            <span>Brushless DC</span>
+                            <span>Thrust generation</span>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <!-- Component 4 -->
+                <article class="component-row reverse reveal">
+
+                    <div class="component-number">04</div>
+
+                    <div class="component-image">
+                        <img
+                            src="assets/esc.jpeg"
+                            alt="50 amp electronic speed controller"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="component-info">
+                        <span class="component-category">MOTOR CONTROL</span>
+
+                        <h3>50 A ESC</h3>
+
+                        <p>
+                            The electronic speed controller regulates
+                            motor operation in response to control
+                            signals. Compatibility with the motor and
+                            battery must be verified.
+                        </p>
+
+                        <div class="component-tags">
+                            <span>Electronic speed control</span>
+                            <span>Brushless motor</span>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <!-- Component 5 -->
+                <article class="component-row reveal">
+
+                    <div class="component-number">05</div>
+
+                    <div class="component-image">
+                        <img
+                            src="assets/remote.jpeg"
+                            alt="FlySky FS-i6 radio transmitter"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="component-info">
+                        <span class="component-category">PILOT INTERFACE</span>
+
+                        <h3>FlySky FS-i6</h3>
+
+                        <p>
+                            The radio transmitter allows the pilot
+                            to send commands to the compatible receiver
+                            for manual control and testing.
+                        </p>
+
+                        <div class="component-tags">
+                            <span>RC control</span>
+                            <span>Wireless commands</span>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <!-- Component 6 -->
+                <article class="component-row reverse reveal">
+
+                    <div class="component-number">06</div>
+
+                    <div class="component-image">
+                        <img
+                            src="assets/servo.jpeg"
+                            alt="Tower Pro MG90S micro servo"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="component-info">
+                        <span class="component-category">MECHANICAL ACTUATION</span>
+
+                        <h3>MG90S Micro Servo</h3>
+
+                        <p>
+                            The servo converts electrical control
+                            signals into angular movement. It can
+                            actuate the aircraft's tilt mechanism
+                            or control surfaces, depending on installation.
+                        </p>
+
+                        <div class="component-tags">
+                            <span>Position control</span>
+                            <span>Actuation</span>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <!-- Component 7 -->
+                <article class="component-row reveal">
+
+                    <div class="component-number">07</div>
+
+                    <div class="component-image">
+                        <img
+                            src="assets/pdb.jpeg"
+                            alt="Matek power distribution board"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="component-info">
+                        <span class="component-category">POWER DISTRIBUTION</span>
+
+                        <h3>Power Distribution Board</h3>
+
+                        <p>
+                            The PDB distributes battery power to
+                            compatible electrical subsystems through
+                            designated connections and power rails.
+                        </p>
+
+                        <div class="component-tags">
+                            <span>Power routing</span>
+                            <span>Electrical integration</span>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <!-- Component 8 -->
+                <article class="component-row reverse reveal">
+
+                    <div class="component-number">08</div>
+
+                    <div class="component-image">
+                        <img
+                            src="assets/buck.jpeg"
+                            alt="DC to DC buck converter"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="component-info">
+                        <span class="component-category">VOLTAGE REGULATION</span>
+
+                        <h3>DC-DC Buck Converter</h3>
+
+                        <p>
+                            A buck converter reduces a higher DC input
+                            voltage to a lower regulated voltage for
+                            compatible electronics.
+                        </p>
+
+                        <div class="component-tags">
+                            <span>DC-DC conversion</span>
+                            <span>Voltage regulation</span>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <!-- Component 9 -->
+                <article class="component-row reveal">
+
+                    <div class="component-number">09</div>
+
+                    <div class="component-image">
+                        <img
+                            src="assets/pca.jpeg"
+                            alt="PCA9685 PWM servo driver"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="component-info">
+                        <span class="component-category">PWM GENERATION</span>
+
+                        <h3>PCA9685 Driver</h3>
+
+                        <p>
+                            The PCA9685 provides multiple PWM output
+                            channels over an I²C interface, helping
+                            coordinate servo control signals.
+                        </p>
+
+                        <div class="component-tags">
+                            <span>16-channel PWM</span>
+                            <span>I²C interface</span>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <!-- Component 10 -->
+                <article class="component-row reverse reveal">
+
+                    <div class="component-number">10</div>
+
+                    <div class="component-image">
+                        <div class="component-placeholder">
+                            <span>IMU</span>
+                            <small>6-AXIS</small>
+                        </div>
+                    </div>
+
+                    <div class="component-info">
+                        <span class="component-category">MOTION SENSING</span>
+
+                        <h3>MPU6050 IMU</h3>
+
+                        <p>
+                            The MPU6050 combines a three-axis
+                            accelerometer and a three-axis gyroscope.
+                            It provides motion measurements that can
+                            support attitude estimation and stabilization.
+                        </p>
+
+                        <div class="component-tags">
+                            <span>3-axis accelerometer</span>
+                            <span>3-axis gyroscope</span>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <!-- Component 11 -->
+                <article class="component-row reveal">
+
+                    <div class="component-number">11</div>
+
+                    <div class="component-image">
+                        <img
+                            src="assets/filament.jpeg"
+                            alt="ASA 3D printing filament"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="component-info">
+                        <span class="component-category">AIRFRAME MATERIAL</span>
+
+                        <h3>ASA Filament</h3>
+
+                        <p>
+                            Acrylonitrile Styrene Acrylate is a
+                            3D-printing thermoplastic valued for its
+                            weather resistance and useful mechanical
+                            properties when printed correctly.
+                        </p>
+
+                        <div class="component-tags">
+                            <span>FDM printing</span>
+                            <span>Thermoplastic</span>
+                        </div>
+                    </div>
+
+                </article>
+
+            </div>
+
+            <div class="components-note reveal">
+                <span>ENGINEERING NOTE</span>
+
+                <p>
+                    Actual flight performance depends on component
+                    compatibility, airframe mass, centre of gravity,
+                    control tuning and systematic ground testing.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- SECTION 04: 3D PRINTING -->
+        <section class="fabrication section" id="fabrication">
+
+            <div class="fabrication-header reveal">
+
+                <span class="eyebrow">03 / DIGITAL FABRICATION</span>
+
+                <h2>
+                    From digital
+                    <span>to physical.</span>
+                </h2>
+
+                <p>
+                    Our airframe fabrication process transforms
+                    digital geometry into lightweight, custom-shaped
+                    aircraft components.
+                </p>
+
+            </div>
+
+
+            <div class="printer-scene reveal">
+
+                <div class="printer-caption">
+                    <span>FABRICATION SYSTEM</span>
+                    <span>FDM / ADDITIVE MANUFACTURING</span>
+                </div>
+
+                <div class="printer">
+
+                    <div class="printer-top">
+                        <div class="printer-rail"></div>
+
+                        <div class="printer-head">
+                            <div class="printer-head-body"></div>
+                            <div class="printer-nozzle"></div>
+                        </div>
+                    </div>
+
+                    <div class="printer-frame">
+
+                        <div class="printer-inner">
+
+                            <div class="print-object">
+
+                                <div class="print-wing"></div>
+
+                                <div class="print-fuselage"></div>
+
+                                <div class="print-tail"></div>
+
+                                <div class="print-layer layer-one"></div>
+                                <div class="print-layer layer-two"></div>
+                                <div class="print-layer layer-three"></div>
+
+                            </div>
+
+                            <div class="printer-bed"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="printer-base">
+                        <span>NH / FAB-01</span>
+                        <span class="printer-led"></span>
+                    </div>
+
+                </div>
+
+                <div class="printer-side-label">
+                    <span>01</span>
+                    LAYER BY LAYER
+                </div>
+
+            </div>
+
+
+            <div class="fabrication-content">
+
+                <div class="fabrication-copy reveal">
+
+                    <span class="eyebrow">THE PROCESS</span>
+
+                    <h3>Precision in every layer.</h3>
+
+                    <p>
+                        The airframe components were prepared as
+                        digital models and manufactured using
+                        fused deposition modelling (FDM).
+                    </p>
+
+                    <p>
+                        We selected ASA filament for its useful
+                        weather resistance. Print orientation,
+                        wall thickness, infill and part geometry
+                        all influence the final strength and mass.
+                    </p>
+
+                </div>
+
+
+                <div class="process-list">
+
+                    <article class="process-step reveal">
+
+                        <span class="process-index">01</span>
+
+                        <div>
+                            <h4>Digital Design</h4>
+
+                            <p>
+                                Prepare the aircraft geometry and
+                                divide it into printable components.
+                            </p>
+                        </div>
+
+                        <span class="process-symbol">↗</span>
+
+                    </article>
+
+
+                    <article class="process-step reveal">
+
+                        <span class="process-index">02</span>
+
+                        <div>
+                            <h4>Slicing & Preparation</h4>
+
+                            <p>
+                                Configure layer height, walls,
+                                infill, supports and print orientation.
+                            </p>
+                        </div>
+
+                        <span class="process-symbol">⌘</span>
+
+                    </article>
+
+
+                    <article class="process-step reveal">
+
+                        <span class="process-index">03</span>
+
+                        <div>
+                            <h4>3D Printing</h4>
+
+                            <p>
+                                Build the components layer by layer
+                                using ASA filament and suitable
+                                printer settings.
+                            </p>
+                        </div>
+
+                        <span class="process-symbol">▤</span>
+
+                    </article>
+
+
+                    <article class="process-step reveal">
+
+                        <span class="process-index">04</span>
+
+                        <div>
+                            <h4>Assembly & Integration</h4>
+
+                            <p>
+                                Assemble the printed airframe and
+                                integrate the propulsion, electronics
+                                and control mechanisms.
+                            </p>
+                        </div>
+
+                        <span class="process-symbol">✓</span>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+
+            <div class="material-banner reveal">
+
+                <div>
+                    <span class="eyebrow">MATERIAL SELECTION</span>
+
+                    <h3>ASA / Acrylonitrile Styrene Acrylate</h3>
+
+                    <p>
+                        Selected for its weather resistance and
+                        suitability for functional printed parts.
+                    </p>
+                </div>
+
+                <div class="material-stat">
+                    <span>PROCESS</span>
+                    <strong>FDM</strong>
+                </div>
+
+                <div class="material-stat">
+                    <span>BUILD METHOD</span>
+                    <strong>Layered</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SECTION 05: PROJECT JOURNEY -->
+        <section class="journey section" id="journey">
+
+            <div class="section-heading reveal">
+
+                <span class="eyebrow">04 / DEVELOPMENT</span>
+
+                <h2>
+                    Built through
+                    <span>experimentation.</span>
+                </h2>
+
+                <p>
+                    From design decisions and material selection
+                    to assembly, electronics integration and testing.
+                </p>
+
+            </div>
+
+
+            <div class="journey-grid">
+
+                <article class="journey-card reveal">
+                    <span>PHASE / 01</span>
+
+                    <h3>Design</h3>
+
+                    <p>
+                        Establish the airframe layout, propulsion
+                        arrangement and component requirements.
+                    </p>
+                </article>
+
+
+                <article class="journey-card reveal">
+                    <span>PHASE / 02</span>
+
+                    <h3>Fabrication</h3>
+
+                    <p>
+                        Produce the airframe components using
+                        3D printing and assemble the aircraft structure.
+                    </p>
+                </article>
+
+
+                <article class="journey-card reveal">
+                    <span>PHASE / 03</span>
+
+                    <h3>Integration</h3>
+
+                    <p>
+                        Connect the electronic subsystems and
+                        develop the embedded control software.
+                    </p>
+                </article>
+
+
+                <article class="journey-card reveal">
+                    <span>PHASE / 04</span>
+
+                    <h3>Testing</h3>
+
+                    <p>
+                        Verify individual subsystems, troubleshoot
+                        issues and progressively evaluate the system.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- SECTION 06: TEAM -->
+        <section class="team section" id="team">
+
+            <div class="team-header reveal">
+
+                <span class="eyebrow">05 / THE PEOPLE BEHIND THE PROJECT</span>
+
+                <h2>
+                    One team.
+                    <span>One mission.</span>
+                </h2>
+
+                <p>
+                    NIGHTHAWK VTOL is the result of collaboration,
+                    experimentation and shared engineering effort.
+                </p>
+
+            </div>
+
+
+            <div class="team-layout">
+
+                <div class="team-members">
+
+                    <article class="member reveal">
+                        <span class="member-number">01</span>
+
+                        <div class="member-info">
+                            <h3>Varad Patil</h3>
+                            <span>FS24EC063</span>
+                        </div>
+
+                        <span class="member-arrow">↗</span>
+                    </article>
+
+
+                    <article class="member reveal">
+                        <span class="member-number">02</span>
+
+                        <div class="member-info">
+                            <h3>Yash Gorule</h3>
+                            <span>FS24EC074</span>
+                        </div>
+
+                        <span class="member-arrow">↗</span>
+                    </article>
+
+
+                    <article class="member reveal">
+                        <span class="member-number">03</span>
+
+                        <div class="member-info">
+                            <h3>Nishant Shigwan</h3>
+                            <span>FS24EC081</span>
+                        </div>
+
+                        <span class="member-arrow">↗</span>
+                    </article>
+
+
+                    <article class="member reveal">
+                        <span class="member-number">04</span>
+
+                        <div class="member-info">
+                            <h3>Yash Gosavi</h3>
+                            <span>FS24EC082</span>
+                        </div>
+
+                        <span class="member-arrow">↗</span>
+                    </article>
+
+
+                    <article class="member reveal">
+                        <span class="member-number">05</span>
+
+                        <div class="member-info">
+                            <h3>Mohammed Wasaid Khan</h3>
+                            <span>FS24EC083</span>
+                        </div>
+
+                        <span class="member-arrow">↗</span>
+                    </article>
+
+
+                    <article class="member reveal">
+                        <span class="member-number">06</span>
+
+                        <div class="member-info">
+                            <h3>Hrushikesh Patil</h3>
+                            <span>FS24EC084</span>
+                        </div>
+
+                        <span class="member-arrow">↗</span>
+                    </article>
+
+                </div>
+
+
+                <aside class="guide-card reveal">
+
+                    <span class="eyebrow">PROJECT GUIDANCE</span>
+
+                    <div class="guide-symbol">N.</div>
+
+                    <p class="guide-label">GUIDED BY</p>
+
+                    <h3>Ms. Trishala K. Balsaraf</h3>
+
+                    <p class="guide-description">
+                        Thank you for your guidance,
+                        encouragement and support throughout
+                        our project journey.
+                    </p>
+
+                    <div class="guide-line"></div>
+
+                    <span class="guide-footer">NIGHTHAWK / VTOL</span>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+
+        <!-- FINAL SECTION -->
+        <section class="ending section" id="ending">
+
+            <div class="ending-decoration"></div>
+
+            <div class="ending-content reveal">
+
+                <span class="eyebrow">
+                    END OF PRESENTATION / 2026
+                </span>
+
+                <h2>
+                    THE
+                    <span>END<span class="title-period">.</span></span>
+                </h2>
+
+                <p>
+                    Every great flight begins with an idea.
+                    <br>
+                    This is only the beginning.
+                </p>
+
+                <a href="#home" class="back-top">
+                    ↑ BACK TO THE BEGINNING
+                </a>
+
+            </div>
+
+            <footer class="site-footer">
+                <span>NIGHTHAWK VTOL</span>
+
+                <span>ENGINEERED WITH PURPOSE.</span>
+
+                <span>© 2026</span>
+            </footer>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
